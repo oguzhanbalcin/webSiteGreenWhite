@@ -1,0 +1,33 @@
+RewriteEngine on
+
+
+ErrorDocument 404 http://onlinebiyoloji.com/404.php
+RewriteRule ^hakkimda$ hakkimda.php [NC,L]
+RewriteRule ^arama$ arama.php [NC,L]
+RewriteRule ^sitemap.xml$ sitemap.php [NC,L]
+RewriteRule ^anasayfa$ index.php [NC,L]
+RewriteRule ^iletisim$ iletisim.php [NC,L]
+RewriteRule ^dersnotlari$ duyurular.php [NC,L]
+RewriteRule ^sitemap.xml$ sitemap.php [NC,L]
+RewriteRule ^nedenonlinebiyoloji$ menudetay.php [NC,L]
+RewriteRule ^insta$ insta.php [NC,L]
+RewriteRule ^pdf$ pdf.php [NC,L]
+
+
+
+
+
+
+RewriteRule ^insta-([0-9a-zA-Z-_]+)-([0-9]+)$ insta.php?sef=$1&insta_id=$2 [L,QSA]
+
+RewriteRule ^notlar-([0-9a-zA-Z-_]+)-([0-9]+)$ haber-detay.php?sef=$1&icerik_id=$2 [L,QSA]
+RewriteRule ^dersprogrami-([0-9a-zA-Z-_]+)-([0-9]+)$ sliderindex.php?sef=$1&slider_id=$2 [L,QSA]
+
+
+
+
+
+
+
+
+
